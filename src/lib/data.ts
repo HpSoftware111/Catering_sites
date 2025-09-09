@@ -143,10 +143,10 @@ export const menuData: Menu[] = [
     longDescription: 'Enjoy the outdoors without the hassle. Our picnic packages are thoughtfully curated with a selection of sandwiches, salads, snacks, and desserts, all packed and ready for your al fresco dining adventure.',
     Icon: Grape,
     bannerImage: 'https://picsum.photos/id/1018/1200/400',
-    thumbnail: 'https://picsum.photos/id/1015/400/250',
+    thumbnail: '/images/picnic1.png',
     images: [
-      { src: 'https://picsum.photos/id/1018/300/200', alt: 'Grilled picnic food' },
-      { src: 'https://picsum.photos/id/1015/300/200', alt: 'BBQ meats' },
+      { src: '/images/picnic1.png', alt: 'Grilled picnic food' },
+      { src: '/images/picnic2.png', alt: 'BBQ meats' },
     ],
     categories: [
       {
@@ -169,10 +169,10 @@ export const menuData: Menu[] = [
     longDescription: 'No meal is complete without a little something sweet. Our pastry chefs create a tempting array of desserts, from bite-sized treats to show-stopping cakes, ensuring a perfect end to your catered event.',
     Icon: Cake,
     bannerImage: 'https://picsum.photos/id/175/1200/400',
-    thumbnail: 'https://picsum.photos/id/326/400/250',
+    thumbnail: '/images/sweet1.png',
      images: [
-      { src: 'https://picsum.photos/id/175/300/200', alt: 'Chocolate truffles' },
-      { src: 'https://picsum.photos/id/326/300/200', alt: 'Assorted pastries' },
+      { src: '/images/sweet1.png', alt: 'Chocolate truffles' },
+      { src: '/images/sweet2.png', alt: 'Assorted pastries' },
     ],
     categories: [
       {
