@@ -17,7 +17,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[400px] w-full flex items-center justify-center text-center text-white">
           <Image
-            src="/images/welcome.png"
+            src="/images/headerImage.png"
             alt="A delicious spread of catered food on a buffet line"
             data-ai-hint="catering food buffet"
             fill
@@ -38,6 +38,16 @@ export default function Home() {
             {/* Welcome Section */}
             <section>
               <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <Image
+                    src="/images/welcome.png"
+                    alt="A person holding a large tray of catered appetizers"
+                    data-ai-hint="catering appetizers"
+                    width={600}
+                    height={400}
+                    className="rounded-lg shadow-lg w-full"
+                  />
+                </div>
                 <div className="space-y-4 text-muted-foreground">
                   <h1 className="text-3xl md:text-4xl font-headline font-bold text-foreground">
                     Welcome to B Bistro Catering
@@ -60,16 +70,6 @@ export default function Home() {
                     goal is simple: to be your go-to New Jersey caterer for any
                     occasion, big or small.
                   </p>
-                </div>
-                <div>
-                  <Image
-                    src="https://picsum.photos/600/400"
-                    alt="A person holding a large tray of catered appetizers"
-                    data-ai-hint="catering appetizers"
-                    width={600}
-                    height={400}
-                    className="rounded-lg shadow-lg w-full"
-                  />
                 </div>
               </div>
             </section>
