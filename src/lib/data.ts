@@ -17,7 +17,7 @@ export interface ServiceImage {
   alt: string;
 }
 // export const  IMAGE_DOMAIN = "http://127.0.0.1:9002";
-export const IMAGE_DOMAIN = "https://catering-sites.vercel.app/";
+export const IMAGE_DOMAIN = "https://catering-sites.vercel.app";
 export interface Menu {
   slug: string;
   title: string;
