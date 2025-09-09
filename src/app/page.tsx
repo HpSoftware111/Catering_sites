@@ -27,40 +27,26 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 p-4 flex flex-col items-center gap-8">
             <Badge />
-            <Button
-              asChild
-              size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg py-6 px-8 font-bold rounded-full shadow-lg"
-            >
-              <Link href="/contact">FREE Catering Quote</Link>
+            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg py-6 px-8 font-bold rounded-full shadow-lg">
+                <Link href="/contact">FREE Catering Quote</Link>
             </Button>
           </div>
         </section>
 
         <div className="py-12 md:py-16">
-          <div className="container mx-auto px-4 space-y-16">
+          <div className="container mx-auto px-4 space-y-12">
             {/* Welcome Section */}
             <section>
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div className="rounded-lg shadow-lg overflow-hidden">
-                  <Image
-                    src="https://picsum.photos/600/400"
-                    alt="A person holding a large tray of catered appetizers"
-                    data-ai-hint="catering appetizers"
-                    width={600}
-                    height={400}
-                    className="w-full"
-                  />
-                </div>
+              <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="space-y-4 text-muted-foreground">
                   <h1 className="text-3xl md:text-4xl font-headline font-bold text-foreground">
-                    Welcome to Bistro Bytes
+                    Welcome to B Bistro Catering
                   </h1>
                   <p className="text-xl text-primary mt-1">
                     New Jersey's Premier Choice for Fresh, Flavorful Catering
                   </p>
                   <p>
-                    At Bistro Bytes, we're proud to offer the finest in both
+                    At B Bistro Catering, we're proud to offer the finest in both
                     on-site and off-site catering services throughout New
                     Jersey. Whether you're planning a corporate lunch, private
                     party, wedding, or community event, our team delivers
@@ -75,38 +61,65 @@ export default function Home() {
                     occasion, big or small.
                   </p>
                 </div>
+                <div>
+                  <Image
+                    src="https://picsum.photos/600/400"
+                    alt="A person holding a large tray of catered appetizers"
+                    data-ai-hint="catering appetizers"
+                    width={600}
+                    height={400}
+                    className="rounded-lg shadow-lg w-full"
+                  />
+                </div>
               </div>
             </section>
 
-            {/* Featured Services Section */}
-            <section>
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-headline font-bold text-foreground">Our Featured Services</h2>
-              </div>
-              <div className="grid md:grid-cols-3 gap-8">
-                {[breakfast, lunch, hotBuffet].map(
-                  (service) =>
-                    service && (
-                      <div key={service.slug} className="border border-border rounded-lg p-6 text-center flex flex-col">
-                        <h3 className="text-2xl font-headline text-primary mb-4">{service.title}</h3>
-                        <p className="text-muted-foreground mb-4 flex-grow">{service.description}</p>
-                        <div className="mb-4">
-                           <Image
-                              src={service.thumbnail}
-                              alt={`Thumbnail for ${service.title}`}
-                              width={400}
-                              height={250}
-                              className="rounded-md shadow-md w-full object-cover aspect-[16/10]"
-                            />
-                        </div>
-                        <Button asChild>
-                          <Link href={`/menu/${service.slug}`}>View Menu</Link>
+            {/* Service Sections */}
+            {[breakfast, lunch, hotBuffet].map(
+              (service) =>
+                service && (
+                  <section
+                    key={service.slug}
+                    className="border border-border rounded-lg p-6 md:p-8"
+                  >
+                    <div className="grid md:grid-cols-12 gap-6 items-start">
+                      <div className="md:col-span-3">
+                        <h2 className="text-3xl font-headline text-primary mb-3">
+                          {service.title}
+                        </h2>
+                        {service.serviceList && (
+                          <p
+                            className="text-muted-foreground whitespace-pre-line"
+                            dangerouslySetInnerHTML={{
+                              __html: service.serviceList.replace(/\\n/g, '<br />'),
+                            }}
+                          />
+                        )}
+                        <Button asChild className="mt-4">
+                          <Link href={`/menu/${service.slug}`}>View Our Menu</Link>
                         </Button>
                       </div>
-                    )
-                )}
-              </div>
-            </section>
+                      <div className="md:col-span-9">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+                          {service.images?.map((img) => (
+                            <Image
+                              key={img.src}
+                              src={img.src}
+                              alt={img.alt}
+                              width={250}
+                              height={180}
+                              className="rounded-md shadow-md w-full object-cover aspect-[4/3]"
+                            />
+                          ))}
+                        </div>
+                        <p className="text-muted-foreground text-center">
+                          {service.description}
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                )
+            )}
 
             {/* Picnic and Sweet Stuff Section */}
             <section className="grid md:grid-cols-2 gap-8">
@@ -122,13 +135,12 @@ export default function Home() {
                       <Link href={`/menu/${picnics.slug}`}>View Our Menu</Link>
                     </Button>
                   </div>
-                   <div className="grid grid-cols-2 gap-4 mb-4 flex-grow">
+                  <div className="grid grid-cols-2 gap-4 mb-4 flex-grow">
                     {picnics.images?.map((img) => (
                       <Image
                         key={img.src}
                         src={img.src}
                         alt={img.alt}
-                        data-ai-hint={img.alt.toLowerCase().split(' ').slice(0,2).join(' ')}
                         width={300}
                         height={200}
                         className="rounded-md shadow-md w-full object-cover aspect-video"
@@ -156,7 +168,6 @@ export default function Home() {
                         key={img.src}
                         src={img.src}
                         alt={img.alt}
-                        data-ai-hint={img.alt.toLowerCase().split(' ').slice(0,2).join(' ')}
                         width={300}
                         height={200}
                         className="rounded-md shadow-md w-full object-cover aspect-video"

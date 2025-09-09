@@ -1,5 +1,6 @@
 'use server';
 
+import { suggestAltText } from '@/ai/flows/image-gallery-alt-text-suggestion';
 import { contactFormSchema, type ContactFormState } from './schemas';
 
 export async function handleContactForm(
@@ -36,4 +37,19 @@ export async function handleContactForm(
     console.error('Error handling contact form:', error);
     return { message: 'An unexpected error occurred. Please try again.' };
   }
+}
+
+
+export async function generateAltTextAction(imageDataUri: string): Promise<{ altText?: string, error?: string }> {
+    if (!imageDataUri) {
+        return { error: 'Image data is missing.' };
+    }
+    try {
+        const result = await suggestAltText({ imageDataUri });
+        return { altText: result.altText };
+    } catch (e) {
+        console.error(e);
+        const error = e instanceof Error ? e.message : 'An unknown error occurred';
+        return { error: `Failed to generate alt text: ${error}` };
+    }
 }

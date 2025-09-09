@@ -16,11 +16,12 @@ const navLinks = [
     label: item.title,
   })),
   { href: '/contact', label: 'Contact' },
+  { href: '/admin/gallery', label: 'Gallery Admin' },
 ];
 
 export function Header() {
   return (
-    <header className={cn('sticky top-0 z-50 w-full bg-primary')}>
+    <header className={cn('sticky top-0 z-50 w-full bg-primary shadow-md')}>
       <div className="container mx-auto flex h-24 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
           <Logo />
@@ -48,7 +49,7 @@ export function Header() {
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="text-white hover:bg-white/20">
+              <Button variant="ghost" size="icon" className="text-white hover:bg-primary/80">
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Open menu</span>
               </Button>

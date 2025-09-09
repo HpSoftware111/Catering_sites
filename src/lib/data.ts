@@ -145,7 +145,7 @@ export const menuData: Menu[] = [
     bannerImage: 'https://picsum.photos/id/1018/1200/400',
     thumbnail: 'https://picsum.photos/id/1015/400/250',
     images: [
-      { src: 'https://picsum.photos/id/986/300/200', alt: 'Picnic basket' },
+      { src: 'https://picsum.photos/id/1018/300/200', alt: 'Grilled picnic food' },
       { src: 'https://picsum.photos/id/1015/300/200', alt: 'BBQ meats' },
     ],
     categories: [
@@ -171,7 +171,7 @@ export const menuData: Menu[] = [
     bannerImage: 'https://picsum.photos/id/175/1200/400',
     thumbnail: 'https://picsum.photos/id/326/400/250',
      images: [
-      { src: 'https://picsum.photos/id/219/300/200', alt: 'dessert table' },
+      { src: 'https://picsum.photos/id/175/300/200', alt: 'Chocolate truffles' },
       { src: 'https://picsum.photos/id/326/300/200', alt: 'Assorted pastries' },
     ],
     categories: [

@@ -23,13 +23,13 @@ const BBistroLogo = ({ className }: { className?: string }) => (
         fill="currentColor"
       />
     </svg>
-    <span className="text-xl font-semibold">bistro</span>
+    <span className="text-xl font-semibold text-white">Bistro Bytes</span>
   </div>
 );
 
 export default function Logo() {
   return (
-    <div className="bg-primary p-4 rounded-md">
+    <div>
       <BBistroLogo />
     </div>
   );
