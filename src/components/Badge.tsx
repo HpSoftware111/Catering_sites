@@ -3,7 +3,7 @@ export function Badge() {
   return (
     <div className="relative h-48 w-48">
           <Image
-              src="https://drive.google.com/drive/folders/1sV5dI5gPHQiwOaW6Aty8hCDd6iC8bjXl/mark.png"
+              src="https://drive.google.com/file/d/1jK2T5ir2fcAD1YMdbt3TpJ0knrOqMMjw/view?usp=drive_link"
               alt="A delicious spread of catered food on a buffet line"
               data-ai-hint="catering food buffet"
               fill

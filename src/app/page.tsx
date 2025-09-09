@@ -17,7 +17,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[400px] w-full flex items-center justify-center text-center text-white">
           <Image
-            src="https://drive.google.com/drive/folders/1sV5dI5gPHQiwOaW6Aty8hCDd6iC8bjXl/headerImage.png"
+            src="https://drive.google.com/file/d/1Tk5ZANykwSzVySI8kAJJmYHXtYji8Qs8/view?usp=drive_link"
             alt="A delicious spread of catered food on a buffet line"
             data-ai-hint="catering food buffet"
             fill
@@ -40,7 +40,7 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <Image
-                    src="https://drive.google.com/drive/folders/1sV5dI5gPHQiwOaW6Aty8hCDd6iC8bjXl/welcome.png"
+                    src="https://drive.google.com/file/d/1jwCydIsPtrmoJqFh3gqOnwv0yirZQdbv/view?usp=drive_link"
                     alt="A person holding a large tray of catered appetizers"
                     data-ai-hint="catering appetizers"
                     width={600}

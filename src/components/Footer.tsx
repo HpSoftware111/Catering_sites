@@ -5,7 +5,7 @@ import Image from 'next/image';
 const BBistroLogo = () => (
     <div className="flex items-center gap-2">
       <Image
-          src="https://drive.google.com/drive/folders/1sV5dI5gPHQiwOaW6Aty8hCDd6iC8bjXl/brand.png"
+          src="https://drive.google.com/file/d/1c-ClF5itrErNLZVk2ysucV8a80WJ3A-N/view?usp=drive_link"
           alt="A delicious spread of catered food on a buffet line"
           data-ai-hint="catering food buffet"
           fill
