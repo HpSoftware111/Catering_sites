@@ -17,7 +17,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[400px] w-full flex items-center justify-center text-center text-white">
           <Image
-            src="https://picsum.photos/id/1074/1600/900"
+            src="/images/welcome.png"
             alt="A delicious spread of catered food on a buffet line"
             data-ai-hint="catering food buffet"
             fill

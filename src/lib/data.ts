@@ -42,12 +42,12 @@ export const menuData: Menu[] = [
     longDescription: 'Our breakfast spreads are perfect for morning meetings, corporate events, or any early gathering. We use the freshest ingredients to create a breakfast experience that is both delicious and revitalizing.',
     Icon: Coffee,
     bannerImage: 'https://picsum.photos/id/292/1200/400',
-    thumbnail: 'https://picsum.photos/id/30/400/250',
+    thumbnail: '/images/breakfast1.png',
     serviceList: 'Perfect for Buffets,\nSpecial Occasions,\nParties, and\nHouse Warmings',
     images: [
-      { src: 'https://picsum.photos/id/292/250/180', alt: 'Breakfast buffet' },
-      { src: 'https://picsum.photos/id/30/250/180', alt: 'Breakfast muffins' },
-      { src: 'https://picsum.photos/id/163/250/180', alt: 'Fruit platter' },
+      { src: '/images/breakfast1.png', alt: 'Breakfast buffet' },
+      { src: '/images/breakfast2.png', alt: 'Breakfast muffins' },
+      { src: '/images/breakfast3.png', alt: 'Fruit platter' },
     ],
     categories: [
       {
@@ -79,12 +79,12 @@ export const menuData: Menu[] = [
     longDescription: 'Keep your team fueled and focused with our diverse lunch options. From classic sandwich platters to vibrant salads, we provide satisfying midday meals that are easy to serve and enjoy.',
     Icon: Sandwich,
     bannerImage: 'https://picsum.photos/id/24/1200/400',
-    thumbnail: 'https://picsum.photos/id/25/400/250',
+    thumbnail: '/images/lunch1.png',
     serviceList: 'Residential or Corporate\nDiverse Menus\nAll You Can Eat!\nSummer Specials',
     images: [
-      { src: 'https://picsum.photos/id/24/250/180', alt: 'Lunch sandwiches' },
-      { src: 'https://picsum.photos/id/25/250/180', alt: 'Gourmet salad' },
-      { src: 'https://picsum.photos/id/493/250/180', alt: 'Boxed lunches' },
+      { src: '/images/lunch1.png', alt: 'Lunch sandwiches' },
+      { src: '/images/lunch2.png', alt: 'Gourmet salad' },
+      { src: '/images/lunch3.png', alt: 'Boxed lunches' },
     ],
     categories: [
       {
@@ -110,12 +110,12 @@ export const menuData: Menu[] = [
     longDescription: 'Impress your guests with a full-service hot buffet. Our chefs prepare a wide range of entrees, sides, and accompaniments to create a warm and inviting meal for any event, from casual gatherings to formal dinners.',
     Icon: Soup,
     bannerImage: 'https://picsum.photos/id/431/1200/400',
-    thumbnail: 'https://picsum.photos/id/433/400/250',
+    thumbnail: '/images/dinner1.png',
     serviceList: 'Buffets\nSpecial Occasions\nParties\nHouse Warmings',
      images: [
-      { src: 'https://picsum.photos/id/431/250/180', alt: 'Hot buffet spread' },
-      { src: 'https://picsum.photos/id/433/250/180', alt: 'Catering dishes' },
-      { src: 'https://picsum.photos/id/658/250/180', alt: 'Party catering' },
+      { src: '/images/dinner1.png', alt: 'Hot buffet spread' },
+      { src: '/images/dinner2.png', alt: 'Catering dishes' },
+      { src: '/images/dinner3.png', alt: 'Party catering' },
     ],
     categories: [
       {
