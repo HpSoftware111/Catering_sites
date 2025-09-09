@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import { Badge } from './Badge';
 import Image from 'next/image';
+import { IMAGE_DOMAIN } from '@/lib/data';
+
 
 const BBistroLogo = () => (
     <div className="flex items-center gap-2">
       <Image
-          src="@/images/brand.png"
+          src={`${IMAGE_DOMAIN}/images/brand.png`}
           alt="A delicious spread of catered food on a buffet line"
           data-ai-hint="catering food buffet"
           fill

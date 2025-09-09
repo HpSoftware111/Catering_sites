@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { menuData } from '@/lib/data';
 import { Badge } from '@/components/Badge';
-
+import { IMAGE_DOMAIN } from '@/lib/data';
 export default function Home() {
   const breakfast = menuData.find((m) => m.slug === 'breakfast');
   const lunch = menuData.find((m) => m.slug === 'lunch');
@@ -12,18 +12,21 @@ export default function Home() {
   const sweetStuff = menuData.find((m) => m.slug === 'sweet-stuff');
 
   return (
+
+
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[400px] w-full flex items-center justify-center text-center text-white">
           <Image
-            src="@/images/headerImage.png"
+            src={`${IMAGE_DOMAIN}/images/headerImage.png`}
             alt="A delicious spread of catered food on a buffet line"
             data-ai-hint="catering food buffet"
             fill
             className="object-cover"
             priority
           />
+
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 p-4 flex flex-col items-center gap-8">
             <Badge />
@@ -40,7 +43,7 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <Image
-                    src="@/images/welcome.png"
+                    src={`${IMAGE_DOMAIN}/images/welcome.png`}
                     alt="A person holding a large tray of catered appetizers"
                     data-ai-hint="catering appetizers"
                     width={600}

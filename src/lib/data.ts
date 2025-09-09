@@ -16,7 +16,7 @@ export interface ServiceImage {
   src: string;
   alt: string;
 }
-
+export const  IMAGE_DOMAIN = "http://127.0.0.1:9002";
 export interface Menu {
   slug: string;
   title: string;
@@ -42,12 +42,12 @@ export const menuData: Menu[] = [
     longDescription: 'Our breakfast spreads are perfect for morning meetings, corporate events, or any early gathering. We use the freshest ingredients to create a breakfast experience that is both delicious and revitalizing.',
     Icon: Coffee,
     bannerImage: 'https://picsum.photos/id/292/1200/400',
-    thumbnail: '/images/breakfast1.png',
+    thumbnail: `${IMAGE_DOMAIN}/images/breakfast1.png`,
     serviceList: 'Perfect for Buffets,\nSpecial Occasions,\nParties, and\nHouse Warmings',
     images: [
-      { src: '/images/breakfast1.png', alt: 'Breakfast buffet' },
-      { src: '/images/breakfast2.png', alt: 'Breakfast muffins' },
-      { src: '/images/breakfast3.png', alt: 'Fruit platter' },
+      { src: `${IMAGE_DOMAIN}/images/breakfast1.png`, alt: 'Breakfast buffet' },
+      { src: `${IMAGE_DOMAIN}/images/breakfast2.png`, alt: 'Breakfast muffins' },
+      { src: `${IMAGE_DOMAIN}/images/breakfast3.png`, alt: 'Fruit platter' },
     ],
     categories: [
       {
@@ -79,12 +79,12 @@ export const menuData: Menu[] = [
     longDescription: 'Keep your team fueled and focused with our diverse lunch options. From classic sandwich platters to vibrant salads, we provide satisfying midday meals that are easy to serve and enjoy.',
     Icon: Sandwich,
     bannerImage: 'https://picsum.photos/id/24/1200/400',
-    thumbnail: '/images/lunch1.png',
+    thumbnail: `${IMAGE_DOMAIN}/images/lunch1.png`,
     serviceList: 'Residential or Corporate\nDiverse Menus\nAll You Can Eat!\nSummer Specials',
     images: [
-      { src: '/images/lunch1.png', alt: 'Lunch sandwiches' },
-      { src: '/images/lunch2.png', alt: 'Gourmet salad' },
-      { src: '/images/lunch3.png', alt: 'Boxed lunches' },
+      { src: `${IMAGE_DOMAIN}/images/lunch1.png`, alt: 'Lunch sandwiches' },
+      { src: `${IMAGE_DOMAIN}/images/lunch2.png`, alt: 'Gourmet salad' },
+      { src: `${IMAGE_DOMAIN}/images/lunch3.png`, alt: 'Boxed lunches' },
     ],
     categories: [
       {
@@ -110,12 +110,12 @@ export const menuData: Menu[] = [
     longDescription: 'Impress your guests with a full-service hot buffet. Our chefs prepare a wide range of entrees, sides, and accompaniments to create a warm and inviting meal for any event, from casual gatherings to formal dinners.',
     Icon: Soup,
     bannerImage: 'https://picsum.photos/id/431/1200/400',
-    thumbnail: '/images/dinner1.png',
+    thumbnail: `${IMAGE_DOMAIN}/images/dinner1.png`,
     serviceList: 'Buffets\nSpecial Occasions\nParties\nHouse Warmings',
      images: [
-      { src: '/images/dinner1.png', alt: 'Hot buffet spread' },
-      { src: '/images/dinner2.png', alt: 'Catering dishes' },
-      { src: '/images/dinner3.png', alt: 'Party catering' },
+      { src: `${IMAGE_DOMAIN}/images/dinner1.png`, alt: 'Hot buffet spread' },
+      { src: `${IMAGE_DOMAIN}/images/dinner2.png`, alt: 'Catering dishes' },
+      { src: `${IMAGE_DOMAIN}/images/dinner3.png`, alt: 'Party catering' },
     ],
     categories: [
       {
@@ -143,10 +143,10 @@ export const menuData: Menu[] = [
     longDescription: 'Enjoy the outdoors without the hassle. Our picnic packages are thoughtfully curated with a selection of sandwiches, salads, snacks, and desserts, all packed and ready for your al fresco dining adventure.',
     Icon: Grape,
     bannerImage: 'https://picsum.photos/id/1018/1200/400',
-    thumbnail: '/images/picnic1.png',
+    thumbnail: `${IMAGE_DOMAIN}/images/picnic1.png`,
     images: [
-      { src: '/images/picnic1.png', alt: 'Grilled picnic food' },
-      { src: '/images/picnic2.png', alt: 'BBQ meats' },
+      { src:`${IMAGE_DOMAIN}/images/picnic1.png`, alt: 'Grilled picnic food' },
+      { src: `${IMAGE_DOMAIN}/images/picnic2.png`, alt: 'BBQ meats' },
     ],
     categories: [
       {
@@ -169,10 +169,10 @@ export const menuData: Menu[] = [
     longDescription: 'No meal is complete without a little something sweet. Our pastry chefs create a tempting array of desserts, from bite-sized treats to show-stopping cakes, ensuring a perfect end to your catered event.',
     Icon: Cake,
     bannerImage: 'https://picsum.photos/id/175/1200/400',
-    thumbnail: '/images/sweet1.png',
+    thumbnail: `${IMAGE_DOMAIN}/images/sweet1.png`,
      images: [
-      { src: '/images/sweet1.png', alt: 'Chocolate truffles' },
-      { src: '/images/sweet2.png', alt: 'Assorted pastries' },
+      { src: `${IMAGE_DOMAIN}/images/sweet1.png`, alt: 'Chocolate truffles' },
+      { src: `${IMAGE_DOMAIN}/images/sweet2.png`, alt: 'Assorted pastries' },
     ],
     categories: [
       {
