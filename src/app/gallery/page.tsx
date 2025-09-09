@@ -1,4 +1,3 @@
-// import ImageUploader from './ImageUploader';
 
 export default function GalleryPage() {
   return (
@@ -11,7 +10,6 @@ export default function GalleryPage() {
           Use our AI tool to generate SEO-friendly alt text for your images. Upload an image to get a suggestion.
         </p>
       </div>
-      {/* <ImageUploader /> */}
     </div>
   );
 }
